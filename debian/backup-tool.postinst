@@ -1,0 +1,20 @@
+#!/bin/sh
+
+set -e
+
+case "$1" in
+    configure)
+        useradd --home-dir "/var/lib/backup-tool" --create-home --system --shell /bin/false backup-tool || true
+
+        mkdir -p /var/log/backup-tool
+        mkdir -p /etc/backup-tool
+
+        chown -R backup-tool:backup-tool /var/log/gnocchi
+        chown -R backup-tool:backup-tool /etc/gnocchi
+
+        ;;
+esac
+
+#DEBHELPER#
+
+exit 0

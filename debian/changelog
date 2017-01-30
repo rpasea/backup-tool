@@ -1,0 +1,5 @@
+backup-tool (1.0.0) unstable; urgency=low
+
+  * Initial release.
+
+ -- Radu Pasea <rpasea@gmail.com>  Mon, 30 Jan 2017 10:18:58 +0200

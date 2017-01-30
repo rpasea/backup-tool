@@ -1,0 +1,11 @@
+Source: backup-tool
+Section: base
+Priority: optional
+Maintainer: Radu Pasea <radu.pasea@gmail.com>
+Build-Depends: debhelper (>= 9), python, python-dev, libpq-dev, dh-virtualenv
+Standards-Version: 3.9.5
+
+Package: backup-tool
+Architecture: all
+Depends: bash, cron, crudini, rsync, mailutils, sharutils, cifs-utils
+Description: Backup tool based on cron and rsync
