@@ -9,8 +9,7 @@ case "$1" in
         mkdir -p /var/log/backup-tool
         mkdir -p /etc/backup-tool
 
-        chown -R backup-tool:backup-tool /var/log/gnocchi
-        chown -R backup-tool:backup-tool /etc/gnocchi
+        chown -R backup-tool:backup-tool /var/log/backup-tool
 
         ;;
 esac

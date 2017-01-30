@@ -1,2 +1,3 @@
 conf/* etc/backup-tool
 backup-tool usr/bin
+etc/* etc/
