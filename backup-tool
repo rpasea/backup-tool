@@ -175,7 +175,7 @@ function send_mail {
 	fi
 	
 	subject="[backup_tool]$1"
-	uuencode "$REPORT" "$REPORT.ext" | mail -s $subject $recipients
+	uuencode "$REPORT" "$REPORT.txt" | mail -s $subject $recipients
 	if [ $? -ne 0 ]; then
 		errcho "Could not send mail to: $recipients" 
 		return 1
