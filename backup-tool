@@ -159,7 +159,7 @@ function backup_source {
 	target="$2"
 	
 	echo "Performing backup of '$source' to '$target'" 2>&1 | tee -a $REPORT
-	rsync -av "$source" "$target" 2>&1 | tee -a $REPORT
+	rsync -av --partial "$source" "$target" 2>&1 | tee -a $REPORT
 	ret_code=$?
 	echo "*******************************************" 2>&1 | tee -a $REPORT
 	return $ret_code
